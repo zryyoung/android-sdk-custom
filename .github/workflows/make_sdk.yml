@@ -58,7 +58,7 @@ jobs:
       target_triple: ${{ matrix.target_triple }}
 
   make:
-    needs: main
+    needs: build
     name: Make SDK for ${{ matrix.target_arch }}
     strategy:
       fail-fast: false
