@@ -50,7 +50,7 @@ jobs:
             target_triple: x86-linux-musl
           - target_arch: x86_64
             target_triple: x86_64-linux-musl
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/main.yml
     with:
       version: ${{ inputs.version }}
       tag: ${{ inputs.tag }}
